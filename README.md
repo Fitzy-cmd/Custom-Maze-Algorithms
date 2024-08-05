@@ -4,6 +4,7 @@ This project was sourced from a university project completed during my enrollmen
 ### Running the Program
 ###### Generating the Maze
 ```java MazeGenerator <width> <height> <outputFileName>```
+
 This will generate a maze (using randomised Depth First Search) with the set width and height (integers) and saves to a text file. The format of this file is as follows:
 
 ```<width>:<height>:<startingCellID>:<endingCellID>:<mazeFormatString>```
