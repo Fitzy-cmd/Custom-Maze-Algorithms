@@ -1,4 +1,4 @@
-# Custom-Maze-Algorithms
+# Custom Maze Algorithms - Generation, Solving and Verification
 This project was sourced from a university project completed during my enrollment. The original repository has been kept private as per the university code of conduct, so this repository has all references to the university removed.
 
 ### Key Information
