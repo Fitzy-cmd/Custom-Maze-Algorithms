@@ -5,20 +5,27 @@ This project was sourced from a university project completed during my enrollmen
 ###### Generating the Maze
 ```java MazeGenerator <width> <height> <outputFileName>```
 This will generate a maze (using randomised Depth First Search) with the set width and height (integers) and saves to a text file. The format of this file is as follows:
+
 ```<width>:<height>:<startingCellID>:<endingCellID>:<mazeFormatString>```
+
 Note that the mazeFormatString is a long string of integers, with each number representing the following:
+
 | --- | 0 | 1 | 2 | 3 |
 | Can move right | False | True | False | True |
 | Can move down | False | False | True | True |
+
 Additionally, the maze CANNOT generate non-square mazes due to an error in the logic of the code that was unfixable in the time left when I realised the error.
 
 ###### Solving the Maze
 ```java MazeSolver <mazeGenOutputFile> <outputFileName>```
+
 This solves the maze using a Breadth First Search and Depth First Search algorithm, using the following format:
+
 ```<stepsTakenToComplete>:<cellIDPath>```
 
 ###### Verifying the Maze
 ```java MazeVerifier <mazeGenOutputFile> <outputFileName>```
+
 Verifying the maze simply means ensuring that all cells are visitable (especially from the starting node), there are no loops possible and no cells are isolated. No file is outputted from this, instead it will output in the console, noting how many cells have four walls (meaning the cell is isolated), how many cells have no walls, how many circular paths are possible, and verifying that all cells are visitable from the starting node.
 
 ### Key Information
