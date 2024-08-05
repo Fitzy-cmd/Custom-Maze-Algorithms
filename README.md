@@ -66,7 +66,7 @@ As a result, an algorithm such as BFS would be more suited to applications requi
 
 ##### Solution Steps
 
-| Maze Size | Solution Steps - DFS | Solution Steps - BFS | Actual Steps - DFS | Actual Steps - BFS | Time Millises - DFS | Time Millises - BFS |
+| Maze Size | Solution Steps - DFS | Solution Steps - BFS | Actual Steps - DFS | Actual Steps - BFS | Time Millisec - DFS | Time Millisec - BFS |
 | --------- | -------------------- | -------------------- | ------------------ | ------------------ | ------------------- | ------------------- |
 | 20 x 20   | 244                  | 244                  | 326                | 556                | 27.101              | 16.253              |
 | 20 x 20   | 217                  | 217                  | 346                | 583                | 29.283              | 15.880              |
