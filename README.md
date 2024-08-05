@@ -2,7 +2,7 @@
 This project was sourced from a university project completed during my enrollment. The original repository has been kept private as per the university code of conduct, so this repository has all references to the university removed.
 
 ### Running the Program
-###### Generating the Maze
+#### Generating the Maze
 ```java MazeGenerator <width> <height> <outputFileName>```
 
 This will generate a maze (using randomised Depth First Search) with the set width and height (integers) and saves to a text file. The format of this file is as follows:
@@ -17,14 +17,14 @@ Note that the mazeFormatString is a long string of integers, with each number re
 
 Additionally, the maze CANNOT generate non-square mazes due to an error in the logic of the code that was unfixable in the time left when I realised the error.
 
-###### Solving the Maze
+#### Solving the Maze
 ```java MazeSolver <mazeGenOutputFile> <outputFileName>```
 
 This solves the maze using a Breadth First Search and Depth First Search algorithm, using the following format:
 
 ```<stepsTakenToComplete>:<cellIDPath>```
 
-###### Verifying the Maze
+#### Verifying the Maze
 ```java MazeVerifier <mazeGenOutputFile> <outputFileName>```
 
 Verifying the maze simply means ensuring that all cells are visitable (especially from the starting node), there are no loops possible and no cells are isolated. No file is outputted from this, instead it will output in the console, noting how many cells have four walls (meaning the cell is isolated), how many cells have no walls, how many circular paths are possible, and verifying that all cells are visitable from the starting node.
@@ -41,13 +41,13 @@ The COMPARING AND CONTRASTING task, Task 4 in the assignment spec, can be found 
 
 The BFS and DFS algorithms have a notable amount of differences, with some of the major ones as follows:
 
-###### Time to complete (Execution Time)
+##### Time to complete (Execution Time)
 
 Whilst DFS proved to be more efficient in terms of space compelxity, BFS proved to be significantly more efficient in terms of time complexity for execution time. This likely due to the fact that BFS will search every neighbour of every neighbour, rather than just fully committing itself to a specific path, as DFS does. As a result, it is a much less riskier algorithm to find the maze end as opposed to DFS. However, this is only present in smaller mazes where fewer neighbour options are possible, being nearly 50% more efficient in 20x20 mazes.
 
 Once the mazes starting significiantly increasing in size, especially in the 35x35 and 100x100 mazes, the methodical nature of BFS really began to significantly hinder the speed in which BFS can solve, being 20%  and nearly 50% less efficient for their respective maze.
 
-###### Nodes Visits
+##### Nodes Visits
 
 As viewable by the results, the differences between the two algorithms becomes more prominent the larger the maze gets. More often than not, however, DFS will beat out BFS in terms of finding the end of the maze in fewer nodes visited. This is likely due to the fact DFS prioritises depth over breadth, meaning that dedicating itself to a specific path means that it's more likely to come across the maze finish (considering the fact that the maze finish is at the furthest point from the start). However, this is a risky approach, as DFS can choose the completely wrong direction to search, resulting in nearly 10x more node traversals, having to go back and forth many times.
 
