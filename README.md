@@ -20,7 +20,7 @@ Additionally, the maze CANNOT generate non-square mazes due to an error in the l
 #### Solving the Maze
 ```java MazeSolver <mazeGenOutputFile> <outputFileName>```
 
-This solves the maze using a Breadth First Search and Depth First Search algorithm, using the following format:
+This solves the maze using a Breadth First Search and Depth First Search algorithm, using the following format saved to a text file:
 
 ```<stepsTakenToComplete>:<cellIDPath>```
 
