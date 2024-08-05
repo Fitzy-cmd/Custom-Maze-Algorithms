@@ -11,10 +11,10 @@ This will generate a maze (using randomised Depth First Search) with the set wid
 
 Note that the mazeFormatString is a long string of integers, with each number representing the following:
 
-| --- | 0 | 1 | 2 | 3 |
-| --- | --- | --- | --- |
-| Can move right | False | True | False | True |
-| Can move down | False | False | True | True |
+|                | 0     | 1     | 2     | 3    |
+|----------------|-------|-------|-------|------|
+| Can move down  | False | True  | False | True |
+| Can move right | False | False | True  | True |
 
 Additionally, the maze CANNOT generate non-square mazes due to an error in the logic of the code that was unfixable in the time left when I realised the error.
 
