@@ -1,6 +1,8 @@
 # Custom Maze Algorithms - Generation, Solving and Verification
 This project was sourced from a university project completed during my enrollment. The original repository has been kept private as per the university code of conduct, so this repository has all references to the university removed.
 
+This project achieved a final mark of **85.5%**
+
 ### Running the Program
 #### Generating the Maze
 ```java MazeGenerator <width> <height> <outputFileName>```
